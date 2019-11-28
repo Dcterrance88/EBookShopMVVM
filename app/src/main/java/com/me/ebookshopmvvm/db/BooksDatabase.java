@@ -203,6 +203,7 @@ public abstract class BooksDatabase extends RoomDatabase {
 * Note 5
 * Inserting data to database should be done in a separate background thread so i am created a
 * new async task for that here.
+*
 * Note 6
 * we nee to define DAO interfaces here and we should get them in the constructor
 * now we can use them to add new categories and books data to database only once when the
