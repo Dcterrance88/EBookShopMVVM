@@ -22,8 +22,8 @@ public class BookRepository {
     }
 
     //Note 1
-    public LiveData<List<Book>> getBooks() {
-        return bookDAO.getAllBooks();
+    public LiveData<List<Book>> getBooks(int categoryId) {
+        return bookDAO.getBooks(categoryId);
     }
 
     //Insert Books
