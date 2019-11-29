@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
         setContentViewBinding();
 
         mainActivityViewModel = ViewModelProviders.of(this).get(MainActivityViewModel.class);
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+    //Note 3
     private void showOnSpinner() {
         ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<Category>(this, R.layout.spinner_item, categoriesList);
         categoryArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
@@ -132,4 +133,8 @@ public class MainActivity extends AppCompatActivity {
 * Using this position value you can get the selected object.
 * i have written codes to get the selected category object and show the details of the
 * category object and show the details of the category on a toast message.
+*
+* Note 3
+* i am going to create an ArrayAdapter for the spinner. we can set this as the spinner adapter of the
+* ActivityMainBinding instance for data binding.
 * */
