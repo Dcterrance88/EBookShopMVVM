@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Note 3
     private void showOnSpinner() {
-        ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<Category>(this, R.layout.spinner_item, categoriesList);
+        ArrayAdapter<Category> categoryArrayAdapter = new ArrayAdapter<>(this, R.layout.spinner_item, categoriesList);
         categoryArrayAdapter.setDropDownViewResource(R.layout.spinner_item);
         activityMainBinding.setSpinnerAdapter(categoryArrayAdapter);
     }
